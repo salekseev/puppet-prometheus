@@ -70,7 +70,7 @@ class prometheus::params {
   $mongodb_exporter_package_ensure = 'latest'
   $mongodb_exporter_package_name = 'mongodb_exporter'
   $mongodb_exporter_user = 'mongodb-exporter'
-  $mongodb_exporter_version = '0.3.0'
+  $mongodb_exporter_version = '0.3.1'
   $elasticsearch_exporter_cnf_uri = 'http://localhost:9200'
   $elasticsearch_exporter_cnf_timeout = '5s'
   $elasticsearch_exporter_download_extension = 'tar.gz'
@@ -80,7 +80,7 @@ class prometheus::params {
   $elasticsearch_exporter_package_ensure = 'latest'
   $elasticsearch_exporter_package_name = 'elasticsearch_exporter'
   $elasticsearch_exporter_user = 'elasticsearch-exporter'
-  $elasticsearch_exporter_version = '1.0.0'
+  $elasticsearch_exporter_version = '1.0.2rc1'
   $node_exporter_collectors = ['diskstats','filesystem','loadavg','meminfo','netdev','stat','time']
   $node_exporter_download_extension = 'tar.gz'
   $node_exporter_download_url_base = 'https://github.com/prometheus/node_exporter/releases'

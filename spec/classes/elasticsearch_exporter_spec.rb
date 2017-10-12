@@ -16,6 +16,10 @@ describe 'prometheus::elasticsearch_exporter' do
           }
         end
 
+        describe 'compile manifest' do
+          it { is_expected.to compile.with_all_deps }
+        end
+
         describe 'install correct binary' do
           it { is_expected.to contain_file('/usr/local/bin/elasticsearch_exporter').with('target' => '/opt/elasticsearch_exporter-1.0.0.linux-amd64/elasticsearch_exporter') }
         end
